@@ -12,6 +12,8 @@ struct SwiftUINavigationApp: App {
     var body: some Scene {
         WindowGroup {
             RootView()
+                .environmentObject(CatBreedsViewModel())
+                .environmentObject(CatFactsViewModel())
         }
     }
 }

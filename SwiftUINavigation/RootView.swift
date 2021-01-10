@@ -16,7 +16,7 @@ struct RootView: View {
 	
 	@ObservedObject var animalsViewModel = AnimalsViewModel()
 	
-	@State private var tabSelection = 0
+	@State private var tabSelection = 3
 	
 	var body: some View {
 		TabView(selection: $tabSelection) {
@@ -34,6 +34,11 @@ struct RootView: View {
 				Image(systemName: "arrow.up.doc.on.clipboard")
 				Text("Modal View")
 			}.tag(2)
+            
+            CatsInfoScreenView().tabItem {
+                Image(systemName: "info.circle")
+                Text("Cats Info")
+            }.tag(3)
 		}
 	}
 }

@@ -1,0 +1,101 @@
+openapi: 3.0.3
+info:
+  title: Cat Facts
+  description: 'Cat Facts'
+  version: 1.0.0
+servers:
+  - url: https://cat-fact.herokuapp.com/
+tags:
+  - name: CatFacts
+    description: Cat Facts
+paths:
+  /facts/random:
+    get:
+      tags:
+        - CatFacts
+      summary: Returns a list of cat facts
+      operationId: getCatFacts
+      parameters:
+        - in: query
+          name: animal_type
+          schema:
+            type: string
+            example:
+              cat
+        - in: query
+          name: amount
+          schema:
+            type: integer
+            maximum: 500
+            minimum: 1
+            example:
+              10
+      responses:
+        200:
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CatFactList'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorModel'
+components:
+  schemas:
+    CatFactList:
+      type: array
+      items:
+        $ref: '#/components/schemas/CatFact'
+    CatFact:
+      type: object
+      required:
+        - status
+        - _id
+        - type
+        - text
+      properties:
+        status:
+          type: object
+          properties:
+            verified:
+              type: boolean
+            feedback:
+              type: string
+            sentCount:
+              type: number
+        type:
+          type: string
+        deleted:
+          type: boolean
+        _id:
+          type: string
+        user:
+          type: string
+        text:
+          type: string
+        __v:
+          type: number
+        source:
+          type: string
+        updatedAt:
+          type: string
+        createdAt:
+          type: string
+        used:
+          type: boolean
+    ErrorModel:
+      type: object
+      required:
+        - message
+        - code
+      properties:
+        message:
+          type: string
+        code:
+          type: integer
+          minimum: 100
+          maximum: 600
+
