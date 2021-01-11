@@ -48,7 +48,7 @@ struct CatInfoScreenView: View {
                     }
                 }
             }
-            .frame(width: 400)
+            .frame(maxWidth: 400)
             Spacer()
         }
         .frame(maxHeight: .infinity)
