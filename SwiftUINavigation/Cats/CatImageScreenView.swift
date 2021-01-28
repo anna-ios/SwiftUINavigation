@@ -7,8 +7,8 @@
 
 import CustomNavigation
 import Foundation
-import Networking
 import SwiftUI
+import UIComponents
 
 struct CatImageScreenView: View {
     

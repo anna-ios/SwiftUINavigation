@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct SwiftUINavigationApp: App {
+    
+    init() {
+        ServiceLocator.shared.addService(service: (PageLoadingService() as PageLoadingService))
+    }
+    
     var body: some Scene {
         WindowGroup {
             RootView()
@@ -16,4 +21,5 @@ struct SwiftUINavigationApp: App {
                 .environmentObject(CatFactsViewModel())
         }
     }
+    
 }

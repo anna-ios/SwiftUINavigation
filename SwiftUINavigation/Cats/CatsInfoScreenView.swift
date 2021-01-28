@@ -1,5 +1,5 @@
 //
-//  CatsInfo.swift
+//  CatsInfoScreenView.swift
 //  SwiftUINavigation
 //
 //  Created by Анна  Зелинская on 04.01.2021.
@@ -43,7 +43,7 @@ struct CatBreedsView: View {
     var body: some View {
         List {
             ForEach(catBreedsViewModel.items) { catBreed in
-                NavigationPushButton(destination: CatInfoScreenView(breed: catBreed)) {
+                NavigationPushButton(destination: CatBreedScreenView(breed: catBreed)) {
                     CatBreedCell(item: catBreed)
                         .onAppear() {
                             if catBreedsViewModel.items.isLast(catBreed) {
@@ -75,7 +75,8 @@ struct CatBreedCell: View {
                 .font(.callout)
                 .foregroundColor(.secondary)
             
-            if catBreedsViewModel.isPageLoading && catBreedsViewModel.items.isLast(item) {
+            if let service = catBreedsViewModel.service,
+               service.isBreedsLoading && catBreedsViewModel.items.isLast(item) {
                 Divider()
                 VStack (alignment: .center) {
                     ProgressView()
@@ -120,7 +121,8 @@ struct CatFactCell: View {
             Text(item.text)
                 .font(.callout)
                 .foregroundColor(.secondary)
-            if catFactsViewModel.isPageLoading && catFactsViewModel.items.isLast(item) {
+            if let service = catFactsViewModel.service,
+               service.isFactsLoading && catFactsViewModel.items.isLast(item) {
                 Divider()
                 VStack (alignment: .center) {
                     ProgressView()

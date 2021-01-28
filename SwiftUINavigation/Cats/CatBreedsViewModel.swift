@@ -14,29 +14,29 @@ extension CatBreed: Identifiable {
 final class CatBreedsViewModel: ObservableObject {
     
     @Published private(set) var items: [CatBreed] = [CatBreed]()
-    @Published private(set) var page: Int = 0
-    @Published private(set) var isPageLoading: Bool = false
+    let service: PageLoadingService?
     
-    
-    init() {}
+    init() {
+        self.service = ServiceLocator.shared.getService()
+    }
     
     func loadPage() {
-        guard isPageLoading == false else {
+        guard let service = self.service,
+              service.isBreedsLoading == false else {
             return
         }
-        isPageLoading = true
-        CatBreedsAPI.getCatBreedList(attachBreed: 0, page: page, limit: 10) { response, error in
-            if let resp = response {
-                self.items.append(contentsOf: resp)
+        
+        service.getCatBreeds { catBreeds in
+            if let breeds = catBreeds {
+                self.items.append(contentsOf: breeds)
             }
-            self.isPageLoading = false
         }
-        page += 1
     }
     
     func reload() {
-        page = 0
         self.items.removeAll()
+        service?.reload()
     }
+    
 }
 

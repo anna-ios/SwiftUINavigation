@@ -12,6 +12,9 @@
 		3E6B5409F1B2C44888BA59BCA7F4A1FF /* AnimalListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A65937DBE4DD97ACB99694ACB9D4285 /* AnimalListScreenView.swift */; };
 		54BEE465F796F297EB8ABA1F60B716D0 /* SelectedAnimalScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3555DF706325F2DFB5F678EDB4C1436C /* SelectedAnimalScreenView.swift */; };
 		708F8A4EA71C7578077537F948C1173B /* SwiftUINavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00362858ABAB1042060D4669F03D5DF7 /* SwiftUINavigationApp.swift */; };
+		A36E577225C0A43F0063E47B /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36E577025C0A43F0063E47B /* ServiceLocator.swift */; };
+		A36E577325C0A43F0063E47B /* PageLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36E577125C0A43F0063E47B /* PageLoadingService.swift */; };
+		A3DA7CDF25BC643300E26C30 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A3DA7CDE25BC643300E26C30 /* UIComponents */; };
 		B0A8527989FB8C2448DE98B8A7D47FF2 /* AnimalDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9E126D367C7372E072AAC5CA3B27B /* AnimalDetailScreenView.swift */; };
 		C335C78B81DAD124687F1269791E2D1C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD024EED288F7264C4445DA27DEF076D /* RootView.swift */; };
 		C3B1C8E7F15607E0ADCB1F5E60B0173E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EADE59B07DDBA815238D1E25F53CEB /* Assets.xcassets */; };
@@ -23,7 +26,7 @@
 		E555BABD25A37A7F00596300 /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555BABC25A37A7F00596300 /* Optional.swift */; };
 		E555BAC025A38FCA00596300 /* AnyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555BABF25A38FCA00596300 /* AnyTransition.swift */; };
 		E57A1D1625AB4D49004A7CA0 /* CatImageScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A1D1525AB4D49004A7CA0 /* CatImageScreenView.swift */; };
-		E57A1D1A25AB4DEF004A7CA0 /* CatInfoScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A1D1925AB4DEF004A7CA0 /* CatInfoScreenView.swift */; };
+		E57A1D1A25AB4DEF004A7CA0 /* CatBreedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A1D1925AB4DEF004A7CA0 /* CatBreedScreenView.swift */; };
 		E57A1D3225AB7C89004A7CA0 /* CustomNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = E57A1D3125AB7C89004A7CA0 /* CustomNavigation */; };
 		E88A1809673A793883F1E49E429E9E6F /* AnimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D07A372D3B6883A4019278E9332FD /* AnimalsViewModel.swift */; };
 		FE6627B46CBDF09EFCEA3098AFC02E46 /* ShowModalScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C632AF227A7538777EF079FDC6A0A /* ShowModalScreenView.swift */; };
@@ -39,6 +42,9 @@
 		8D69B6A887D0A8E207D3EDCA45A60FA9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8DE9E126D367C7372E072AAC5CA3B27B /* AnimalDetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailScreenView.swift; sourceTree = "<group>"; };
 		9C5D38EB31129CF54340127E7362A1A9 /* SwiftUINavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A36E577025C0A43F0063E47B /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
+		A36E577125C0A43F0063E47B /* PageLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLoadingService.swift; sourceTree = "<group>"; };
+		A3DA7CDC25BC640B00E26C30 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UIComponents; path = ../../../UIComponents; sourceTree = "<group>"; };
 		BD024EED288F7264C4445DA27DEF076D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E555BA9625A350DE00596300 /* CatFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsViewModel.swift; sourceTree = "<group>"; };
 		E555BA9C25A358BB00596300 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -48,7 +54,7 @@
 		E555BABC25A37A7F00596300 /* Optional.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Optional.swift; sourceTree = "<group>"; };
 		E555BABF25A38FCA00596300 /* AnyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransition.swift; sourceTree = "<group>"; };
 		E57A1D1525AB4D49004A7CA0 /* CatImageScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageScreenView.swift; sourceTree = "<group>"; };
-		E57A1D1925AB4DEF004A7CA0 /* CatInfoScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatInfoScreenView.swift; sourceTree = "<group>"; };
+		E57A1D1925AB4DEF004A7CA0 /* CatBreedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedScreenView.swift; sourceTree = "<group>"; };
 		E57A1D2E25AB7C72004A7CA0 /* CustomNavigation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomNavigation; sourceTree = "<group>"; };
 		ED5D07A372D3B6883A4019278E9332FD /* AnimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewModel.swift; sourceTree = "<group>"; };
 		FA1C632AF227A7538777EF079FDC6A0A /* ShowModalScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModalScreenView.swift; sourceTree = "<group>"; };
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DA7CDF25BC643300E26C30 /* UIComponents in Frameworks */,
 				E555BAB325A3742400596300 /* Networking in Frameworks */,
 				E57A1D3225AB7C89004A7CA0 /* CustomNavigation in Frameworks */,
 			);
@@ -73,15 +80,13 @@
 				E555BAA125A363E900596300 /* Modules */,
 				E555BA9B25A3586100596300 /* Extensions */,
 				E555BABB25A37A0D00596300 /* Cats */,
-				89FD5CB320B24857550DC67EF4AFAB6F /* Preview Content */,
-				15F7B071959639074A7784793648C52D /* Animal.swift */,
-				8DE9E126D367C7372E072AAC5CA3B27B /* AnimalDetailScreenView.swift */,
-				5A65937DBE4DD97ACB99694ACB9D4285 /* AnimalListScreenView.swift */,
-				ED5D07A372D3B6883A4019278E9332FD /* AnimalsViewModel.swift */,
+				A3DA7CD825BC620700E26C30 /* Animals */,
+				A36E576F25C0A3FA0063E47B /* Services */,
 				BD024EED288F7264C4445DA27DEF076D /* RootView.swift */,
 				3555DF706325F2DFB5F678EDB4C1436C /* SelectedAnimalScreenView.swift */,
 				FA1C632AF227A7538777EF079FDC6A0A /* ShowModalScreenView.swift */,
 				00362858ABAB1042060D4669F03D5DF7 /* SwiftUINavigationApp.swift */,
+				89FD5CB320B24857550DC67EF4AFAB6F /* Preview Content */,
 				31EADE59B07DDBA815238D1E25F53CEB /* Assets.xcassets */,
 				5C7F53CCEDCB7AF4C801D013477F9D83 /* Info.plist */,
 			);
@@ -113,6 +118,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A36E576F25C0A3FA0063E47B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A36E577125C0A43F0063E47B /* PageLoadingService.swift */,
+				A36E577025C0A43F0063E47B /* ServiceLocator.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A3DA7CD825BC620700E26C30 /* Animals */ = {
+			isa = PBXGroup;
+			children = (
+				5A65937DBE4DD97ACB99694ACB9D4285 /* AnimalListScreenView.swift */,
+				8DE9E126D367C7372E072AAC5CA3B27B /* AnimalDetailScreenView.swift */,
+				15F7B071959639074A7784793648C52D /* Animal.swift */,
+				ED5D07A372D3B6883A4019278E9332FD /* AnimalsViewModel.swift */,
+			);
+			path = Animals;
+			sourceTree = "<group>";
+		};
 		E514DDFD25A0B4CA003F4541 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +158,7 @@
 		E555BAA125A363E900596300 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A3DA7CDC25BC640B00E26C30 /* UIComponents */,
 				E57A1D2E25AB7C72004A7CA0 /* CustomNavigation */,
 				E555BAB025A3718600596300 /* Networking */,
 			);
@@ -143,10 +169,10 @@
 			isa = PBXGroup;
 			children = (
 				E555BAB525A3783A00596300 /* CatsInfoScreenView.swift */,
-				E57A1D1925AB4DEF004A7CA0 /* CatInfoScreenView.swift */,
+				E57A1D1925AB4DEF004A7CA0 /* CatBreedScreenView.swift */,
+				E57A1D1525AB4D49004A7CA0 /* CatImageScreenView.swift */,
 				E555BA9625A350DE00596300 /* CatFactsViewModel.swift */,
 				E555BAA725A36A8600596300 /* CatBreedsViewModel.swift */,
-				E57A1D1525AB4D49004A7CA0 /* CatImageScreenView.swift */,
 			);
 			path = Cats;
 			sourceTree = "<group>";
@@ -170,6 +196,7 @@
 			packageProductDependencies = (
 				E555BAB225A3742400596300 /* Networking */,
 				E57A1D3125AB7C89004A7CA0 /* CustomNavigation */,
+				A3DA7CDE25BC643300E26C30 /* UIComponents */,
 			);
 			productName = SwiftUINavigation;
 			productReference = 9C5D38EB31129CF54340127E7362A1A9 /* SwiftUINavigation.app */;
@@ -229,7 +256,8 @@
 				27D1289318E97177D752BBD6D2BDA261 /* Animal.swift in Sources */,
 				E555BA9D25A358BB00596300 /* Array.swift in Sources */,
 				E555BABD25A37A7F00596300 /* Optional.swift in Sources */,
-				E57A1D1A25AB4DEF004A7CA0 /* CatInfoScreenView.swift in Sources */,
+				A36E577325C0A43F0063E47B /* PageLoadingService.swift in Sources */,
+				E57A1D1A25AB4DEF004A7CA0 /* CatBreedScreenView.swift in Sources */,
 				E57A1D1625AB4D49004A7CA0 /* CatImageScreenView.swift in Sources */,
 				E555BAA825A36A8600596300 /* CatBreedsViewModel.swift in Sources */,
 				B0A8527989FB8C2448DE98B8A7D47FF2 /* AnimalDetailScreenView.swift in Sources */,
@@ -239,6 +267,7 @@
 				54BEE465F796F297EB8ABA1F60B716D0 /* SelectedAnimalScreenView.swift in Sources */,
 				E555BA9725A350DE00596300 /* CatFactsViewModel.swift in Sources */,
 				FE6627B46CBDF09EFCEA3098AFC02E46 /* ShowModalScreenView.swift in Sources */,
+				A36E577225C0A43F0063E47B /* ServiceLocator.swift in Sources */,
 				708F8A4EA71C7578077537F948C1173B /* SwiftUINavigationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +463,10 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		A3DA7CDE25BC643300E26C30 /* UIComponents */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = UIComponents;
+		};
 		E555BAB225A3742400596300 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;

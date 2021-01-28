@@ -14,27 +14,28 @@ extension CatFact: Identifiable {
 final class CatFactsViewModel: ObservableObject {
     
     @Published private(set) var items: [CatFact] = [CatFact]()
-    @Published private(set) var isPageLoading: Bool = false
+    let service: PageLoadingService?
     
-    init() {}
+    init() {
+        self.service = ServiceLocator.shared.getService()
+    }
     
     func loadPage() {
         
-        guard isPageLoading == false else {
+        guard service?.isFactsLoading == false else {
             return
         }
-        isPageLoading = true
-                
-        CatFactsAPI.getCatFacts(animalType: "cat", amount: 10) { response, error in
-            if let resp = response {
-                self.items.append(contentsOf: resp)
+        
+        service?.getCatFacts(completion: { catFacts in
+            if let facts = catFacts {
+                self.items.append(contentsOf: facts)
             }
-            self.isPageLoading = false
-        }
+        })
     }
     
     func reload() {
         self.items.removeAll()
     }
+    
 }
 

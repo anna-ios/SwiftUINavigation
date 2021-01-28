@@ -1,5 +1,5 @@
 //
-//  CatInfoScreenView.swift
+//  CatBreedScreenView.swift
 //  SwiftUINavigation
 //
 //  Created by Анна  Зелинская on 10.01.2021.
@@ -10,7 +10,7 @@ import Foundation
 import Networking
 import SwiftUI
 
-struct CatInfoScreenView: View {
+struct CatBreedScreenView: View {
     
     let breed: CatBreed
     
