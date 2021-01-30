@@ -14,7 +14,8 @@
 		708F8A4EA71C7578077537F948C1173B /* SwiftUINavigationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00362858ABAB1042060D4669F03D5DF7 /* SwiftUINavigationApp.swift */; };
 		A36E577225C0A43F0063E47B /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36E577025C0A43F0063E47B /* ServiceLocator.swift */; };
 		A36E577325C0A43F0063E47B /* PageLoadingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36E577125C0A43F0063E47B /* PageLoadingService.swift */; };
-		A3DA7CDF25BC643300E26C30 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A3DA7CDE25BC643300E26C30 /* UIComponents */; };
+		A3F6D51B25C590E7000F99A8 /* UIComponents in Frameworks */ = {isa = PBXBuildFile; productRef = A3F6D51A25C590E7000F99A8 /* UIComponents */; };
+		A3F6D52025C5CEC8000F99A8 /* CustomNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = A3F6D51F25C5CEC8000F99A8 /* CustomNavigation */; };
 		B0A8527989FB8C2448DE98B8A7D47FF2 /* AnimalDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE9E126D367C7372E072AAC5CA3B27B /* AnimalDetailScreenView.swift */; };
 		C335C78B81DAD124687F1269791E2D1C /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD024EED288F7264C4445DA27DEF076D /* RootView.swift */; };
 		C3B1C8E7F15607E0ADCB1F5E60B0173E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31EADE59B07DDBA815238D1E25F53CEB /* Assets.xcassets */; };
@@ -27,7 +28,6 @@
 		E555BAC025A38FCA00596300 /* AnyTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = E555BABF25A38FCA00596300 /* AnyTransition.swift */; };
 		E57A1D1625AB4D49004A7CA0 /* CatImageScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A1D1525AB4D49004A7CA0 /* CatImageScreenView.swift */; };
 		E57A1D1A25AB4DEF004A7CA0 /* CatBreedScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E57A1D1925AB4DEF004A7CA0 /* CatBreedScreenView.swift */; };
-		E57A1D3225AB7C89004A7CA0 /* CustomNavigation in Frameworks */ = {isa = PBXBuildFile; productRef = E57A1D3125AB7C89004A7CA0 /* CustomNavigation */; };
 		E88A1809673A793883F1E49E429E9E6F /* AnimalsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5D07A372D3B6883A4019278E9332FD /* AnimalsViewModel.swift */; };
 		FE6627B46CBDF09EFCEA3098AFC02E46 /* ShowModalScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1C632AF227A7538777EF079FDC6A0A /* ShowModalScreenView.swift */; };
 /* End PBXBuildFile section */
@@ -44,7 +44,6 @@
 		9C5D38EB31129CF54340127E7362A1A9 /* SwiftUINavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUINavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A36E577025C0A43F0063E47B /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		A36E577125C0A43F0063E47B /* PageLoadingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageLoadingService.swift; sourceTree = "<group>"; };
-		A3DA7CDC25BC640B00E26C30 /* UIComponents */ = {isa = PBXFileReference; lastKnownFileType = folder; name = UIComponents; path = ../../../UIComponents; sourceTree = "<group>"; };
 		BD024EED288F7264C4445DA27DEF076D /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		E555BA9625A350DE00596300 /* CatFactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatFactsViewModel.swift; sourceTree = "<group>"; };
 		E555BA9C25A358BB00596300 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -55,7 +54,6 @@
 		E555BABF25A38FCA00596300 /* AnyTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyTransition.swift; sourceTree = "<group>"; };
 		E57A1D1525AB4D49004A7CA0 /* CatImageScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageScreenView.swift; sourceTree = "<group>"; };
 		E57A1D1925AB4DEF004A7CA0 /* CatBreedScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedScreenView.swift; sourceTree = "<group>"; };
-		E57A1D2E25AB7C72004A7CA0 /* CustomNavigation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = CustomNavigation; sourceTree = "<group>"; };
 		ED5D07A372D3B6883A4019278E9332FD /* AnimalsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsViewModel.swift; sourceTree = "<group>"; };
 		FA1C632AF227A7538777EF079FDC6A0A /* ShowModalScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowModalScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,9 +63,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3DA7CDF25BC643300E26C30 /* UIComponents in Frameworks */,
+				A3F6D52025C5CEC8000F99A8 /* CustomNavigation in Frameworks */,
+				A3F6D51B25C590E7000F99A8 /* UIComponents in Frameworks */,
 				E555BAB325A3742400596300 /* Networking in Frameworks */,
-				E57A1D3225AB7C89004A7CA0 /* CustomNavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,8 +156,6 @@
 		E555BAA125A363E900596300 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A3DA7CDC25BC640B00E26C30 /* UIComponents */,
-				E57A1D2E25AB7C72004A7CA0 /* CustomNavigation */,
 				E555BAB025A3718600596300 /* Networking */,
 			);
 			path = Modules;
@@ -195,8 +191,8 @@
 			name = SwiftUINavigation;
 			packageProductDependencies = (
 				E555BAB225A3742400596300 /* Networking */,
-				E57A1D3125AB7C89004A7CA0 /* CustomNavigation */,
-				A3DA7CDE25BC643300E26C30 /* UIComponents */,
+				A3F6D51A25C590E7000F99A8 /* UIComponents */,
+				A3F6D51F25C5CEC8000F99A8 /* CustomNavigation */,
 			);
 			productName = SwiftUINavigation;
 			productReference = 9C5D38EB31129CF54340127E7362A1A9 /* SwiftUINavigation.app */;
@@ -225,6 +221,10 @@
 				Base,
 			);
 			mainGroup = 5694579B478F652252C06B89FEB57EF6;
+			packageReferences = (
+				A3F6D51925C590E7000F99A8 /* XCRemoteSwiftPackageReference "UIComponents" */,
+				A3F6D51E25C5CEC8000F99A8 /* XCRemoteSwiftPackageReference "CustomNavigation" */,
+			);
 			productRefGroup = 6F6E15E95C8D495252DE6C2DF2B4434F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -462,18 +462,39 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		A3F6D51925C590E7000F99A8 /* XCRemoteSwiftPackageReference "UIComponents" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/anna-ios/UIComponents";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		A3F6D51E25C5CEC8000F99A8 /* XCRemoteSwiftPackageReference "CustomNavigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/anna-ios/CustomNavigation";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		A3DA7CDE25BC643300E26C30 /* UIComponents */ = {
+		A3F6D51A25C590E7000F99A8 /* UIComponents */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = A3F6D51925C590E7000F99A8 /* XCRemoteSwiftPackageReference "UIComponents" */;
 			productName = UIComponents;
+		};
+		A3F6D51F25C5CEC8000F99A8 /* CustomNavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3F6D51E25C5CEC8000F99A8 /* XCRemoteSwiftPackageReference "CustomNavigation" */;
+			productName = CustomNavigation;
 		};
 		E555BAB225A3742400596300 /* Networking */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Networking;
-		};
-		E57A1D3125AB7C89004A7CA0 /* CustomNavigation */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CustomNavigation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

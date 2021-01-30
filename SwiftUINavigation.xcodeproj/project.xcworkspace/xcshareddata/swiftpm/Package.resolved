@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CustomNavigation",
+        "repositoryURL": "https://github.com/anna-ios/CustomNavigation",
+        "state": {
+          "branch": "main",
+          "revision": "aaf3662183da8a42d1c12915f12ae20b8fea4481",
+          "version": null
+        }
+      },
+      {
+        "package": "UIComponents",
+        "repositoryURL": "https://github.com/anna-ios/UIComponents",
+        "state": {
+          "branch": "main",
+          "revision": "8aead8705dd3bf088e5a82fa7c01fe428659db7f",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
